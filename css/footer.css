@@ -1,0 +1,274 @@
+footer {
+  display: block;
+}
+
+.footer {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  align-items: flex-start;
+  background-color: var(--black);
+}
+
+.footer-bottom-wrapper {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: start;
+  grid-row-gap: 5px;
+}
+
+.footer-copyright {
+  grid-column-gap: 5px;
+  grid-row-gap: 0px;
+  color: #ffffffb3;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  font-size: 14px;
+  line-height: 1.2em;
+  display: flex;
+}
+
+.footer-logo-wrapper {
+  grid-column-gap: 40px;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.footer-brand-wrapper {
+  grid-column-gap: 40px;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  display: flex;
+  position: relative;
+}
+
+.footer-brand {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.footer-brand.w--current {
+  color: #fff;
+  padding-left: 0;
+  font-family: Poppins;
+}
+
+.footer-links-wrapper {
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+}
+
+.footer-line {
+  background-color: var(--primary);
+  width: 80px;
+  height: 8px;
+}
+
+.right-links-footer {
+  grid-row-gap: 30px;
+  width: 100%;
+  position: relative;
+}
+
+.title-footer-link {
+  color: var(--white);
+  text-transform: uppercase;
+  font-family: Anton, sans-serif;
+  font-size: 40px;
+  line-height: 1.2em;
+}
+
+.title-footer-link:hover {
+  color: var(--primary);
+}
+
+.footer-licensing-link {
+  color: #ffffffb3;
+  font-size: 14px;
+}
+
+.footer-licensing-link:hover {
+  color: var(--primary);
+}
+
+.footer-link {
+  color: var(--white-50);
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+}
+
+.footer-link:hover {
+  color: var(--white);
+}
+
+.footer-social-icons-wrapper {
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+}
+
+.footer-wrapper {
+  grid-template-rows: auto;
+  grid-template-columns: 2.3fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.top {
+  width: auto;
+  height: 50px;
+  padding: 0 30px;
+  font-family: sk8club, sans-serif;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2em;
+  letter-spacing: 2px;
+  color: var(--white);
+  position: absolute;
+  inset: 0% 0% auto auto;
+  border-radius: 100px / 44px;
+  border: 1px solid #ffffff0d;
+  background-color: #ffffff0d;
+}
+
+.top:hover {
+  color: var(--primary);
+}
+
+.top-1 {
+  width: 0;
+  height: 0;
+}
+
+@media screen and (min-width: 1280px) {
+  .footer {
+    padding-top: 140px;
+  }
+  .footer-bottom-wrapper {
+    margin-top: 30px;
+  }
+
+  .footer-wrapper {
+    grid-template-columns: 2.1fr 1fr 1fr 1fr;
+  }
+
+  .title-footer-link {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .footer-wrapper {
+    flex-wrap: wrap;
+    grid-template-columns: 1.8fr 1fr 1fr 1fr;
+    margin-bottom: 30px;
+  }
+  .footer-brand-wrapper {
+    width: 100%;
+    grid-column-gap: 20px;
+    margin-bottom: 50px;
+  }
+
+  .footer-logo-wrapper {
+    grid-column-gap: 20px;
+    width: 50%;
+  }
+
+  .footer-line {
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding-top: 80px;
+  }
+  .footer-copyright {
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .footer-wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .footer-brand-wrapper {
+    grid-row-gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  .footer-brand {
+    padding-left: 0;
+  }
+
+  .footer-logo-wrapper {
+    align-items: center;
+    width: 100%;
+  }
+
+  .footer-line {
+    display: none;
+  }
+  .right-links-footer {
+    grid-row-gap: 20px;
+  }
+
+  .title-footer-link {
+    font-size: 30px;
+  }
+
+  .title-footer-link.address {
+    padding-right: 60px;
+  }
+
+  .top {
+    inset: -2rem 0% 0% auto;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .footer {
+    text-align: left;
+  }
+
+  .footer-copyright {
+    text-align: center;
+  }
+
+  .footer-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-brand-wrapper {
+    flex-direction: column;
+  }
+
+  .footer-licensing-link {
+    text-align: center;
+    justify-content: center;
+    line-height: 1.6em;
+  }
+
+  .title-footer-link {
+    font-size: 24px;
+  }
+}
+

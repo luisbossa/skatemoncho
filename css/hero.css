@@ -1,0 +1,96 @@
+.intro-div {
+  position: relative;
+}
+
+svg {
+  width: 90%;
+  position: absolute;
+  top: -17rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+
+text {
+  font-family: "sk8club", sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  fill: var(--primary);
+}
+
+/* === Hero Video === */
+.main-video {
+  width: 90%;
+  height: 820px;
+  position: relative;
+  margin: -0.7rem auto;
+  border-radius: 50%;
+  transition: border-radius 0.4s ease, height 0.4s ease;
+  overflow: hidden;
+}
+
+.main-video video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  filter: contrast(120%) brightness(90%);
+}
+
+/* Borde */
+.oval-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 20px solid var(--white-50);
+  border-radius: 50%;
+  background: transparent;
+  pointer-events: none;
+  z-index: 2;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.15), 0 0 15px rgba(0, 0, 0, 0.25);
+  transition: border-radius 0.4s ease;
+}
+
+/* === Breakpoint: tablets y móviles === */
+@media (max-width: 1300px) {
+  .main-video {
+    width: 100%;
+    height: 710px;
+    border-radius: 0;
+  }
+
+  .oval-border {
+    border-radius: 0;
+    border-width: 10px;
+  }
+
+  svg {
+    top: -10rem;
+  }
+
+  text {
+    font-size: 1.8rem;
+  }
+}
+
+/* === Breakpoint: móviles pequeños === */
+@media (max-width: 600px) {
+  .main-video {
+    height: 400px;
+  }
+
+  .oval-border {
+    border-width: 6px;
+  }
+
+  text {
+    font-size: 1.5rem;
+  }
+}
+
